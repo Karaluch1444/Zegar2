@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Zegar</title>
+    <meta name="description" content="123">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <script type="text/javascript">
+            
+        function odliczanie()
+            {
+            var dzisiaj = new Date();
+                
+            var dzien = dzisiaj.getDate();
+            var miesiac = dzisiaj.getMonth()+1;
+            var rok = dzisiaj.getFullYear();
+                
+            var godzina = dzisiaj.getHours();
+            if (godzina<10) godzina = "0"+godzina;
+                
+            var minuta = dzisiaj.getMinutes();
+            if (minuta<10) minuta = "0"+minuta;
+                
+            var sekunda = dzisiaj.getSeconds();
+            if (sekunda<10) sekunda = "0"+sekunda;
+                
+            document.getElementById("zegar").innerHTML = 
+            dzien+"/"+miesiac+"/"+rok+" \n "+godzina+":"+minuta+":"+sekunda;
+                
+            setTimeout("odliczanie()",1000);
+            }
+    </script>
+ 
+
+</head>
+
+<body onload="odliczanie();">
+    
+    <header>
+        <nav>
+
+            <div id="logo"><img src="logo.png" style="width: 50px; height: 50px;"></div>
+            
+            <ul class="nav">
+                <li> <a href="index.html">Strona Główna</a> </li>
+                <li> <a href="Premium.html">Premium</a> </li>
+                <li> <a href="info.html">Informacje</a> </li>
+                <li> <a href="Tworcy.html">Twórcy</a> </li>
+            </ul>
+            
+            <div style="clear: both;"></div>
+            
+        </nav>
+    </header>
+
+    <div id="container">
+
+        <div id="dodaj">
+            
+                <div id="zegar"></div> 
+
+        </div>
+
+     </div>
+
+     <footer>
+        Zegar &copy; Nowoczesna aplikacja do sprawdzania czasu
+     </footer>
+      
+
+</body>
+</html>

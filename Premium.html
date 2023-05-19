@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Zegar</title>
+    <meta name="description" content="123">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <script type="text/javascript">
+            
+        function odliczanie()
+            {
+            var dzisiaj = new Date();
+                
+            var dzien = dzisiaj.getDate();
+            var miesiac = dzisiaj.getMonth()+1;
+            var rok = dzisiaj.getFullYear();
+                
+            var godzina = dzisiaj.getHours();
+            if (godzina<10) godzina = "0"+godzina;
+                
+            var minuta = dzisiaj.getMinutes();
+            if (minuta<10) minuta = "0"+minuta;
+                
+            var sekunda = dzisiaj.getSeconds();
+            if (sekunda<10) sekunda = "0"+sekunda;
+                
+            document.getElementById("zegar").innerHTML = 
+            dzien+"/"+miesiac+"/"+rok+" | "+godzina+":"+minuta+":"+sekunda;
+                
+            setTimeout("odliczanie()",1000);
+            }
+    </script>
+ 
+
+</head>
+
+<body onload="odliczanie();">
+    
+    <header>
+        <nav>
+
+            <div id="logo"><img src="logo.png" style="width: 50px; height: 50px;"></div>
+            
+            <ul class="nav">
+                <li> <a href="index.html">Strona Główna</a> </li>
+                <li> <a href="Premium.html">Premium</a> </li>
+                <li> <a href="info.html">Informacje</a> </li>
+                <li> <a href="Tworcy.html">Twórcy</a> </li>
+            </ul>
+            
+            <div style="clear: both;"></div>
+            
+        </nav>
+    </header>
+
+    <div id="container">
+
+        <div id="zwiastun">Ta funkcja nie jest jeszcze dostępna, lecz nie martwcie się gdyż wkrótce zostanie dodana <br/><br/> Na pocieszenie macie fragment książki Adama Mickiewicza pod tutułem "Pan Tadeusz".</div>
+
+        <div id="tadeusz">
+
+            „ Słysząc to Major wstaje i od gniewu parska:<br/>
+            «Czy ty oszalał, Ryków? To służba cesarska:<br/>
+            A służba nie jest drużba, stary, głupi Ryków!<br/>
+            Czy ty oszalał? Ja mam puszczać buntowników!<br/>
+            W takim wojennym czasie! Ha, pany Polaki,<br/>
+            Ja was nauczę buntu! Ha, szlachta łajdaki,<br/>
+            Dobrzyńscy, oj ja znam was, niech łajdaki mokną!<br/>
+            (I zaśmiał się na całe gardło, patrząc w okno)<br/>
+            Wszakże ten sam Dobrzyński, co siedzi w surducie,<br/>
+            — Hej zdjąć mu surdut! — w roku przeszłym na reducie<br/>
+            Zaczął ze mną tę kłótnię; kto zaczął? on, nie ja.<br/>
+            On, gdy tańczyłem, krzyknął: »Precz za drzwi złodzieja!«<br/>
+            Że wtenczas za pułkowej okradzenie kasy<br/>
+            Byłem pod śledztwem, miałem wielkie ambarasy:<br/>
+            A jemu co do tego? Ja tańczę mazura,<br/>
+            On krzyczy z tyłu: »Złodziej!« szlachta za nim: »Ura!«<br/>
+            Skrzywdzili mnie — a co? wpadł w me szpony szlachciura!<br/>
+            Mówiłem: »Ej Dobrzyński! ej, przyjdzie do woza<br/>
+            Koza« — a co, Dobrzyński? widzisz: będzie łoza!»<br/>
+            <br/>
+            Potem Sędziemu szepnął, schyliwszy się w ucho:<br/>
+            «Jeśli chcesz Sędzio, żeby to uszło na sucho,<br/>
+            Za każdą głowę tysiąc rubelków gotówką:<br/>
+            Tysiąc rubelków Sędzio, to ostatnie słówko».<br/>
+            <br/>
+                Sędzia chciał targować się; lecz Major nie słuchał,<br/>
+            Znowu biegał po izbie, dymem gęsto buchał,<br/>
+            Podobny do szmermelu albo do rakiety.<br/>
+            Chodziły za nim prosząc i płacząc kobiety.<br/>
+            «Majorze — mówił Sędzia — choć pozwiesz do prawa;<br/>
+            Cóż wygrasz? Tu nie zaszła żadna bitwa krwawa,<br/>
+            Nie było ran; że zjedli kury i półgąski,<br/>
+            Za to wedle statutu zapłacą nawiązki.<br/>
+            Ja na pana Hrabiego nie zanoszę skargi;<br/>
+            To tylko były zwykłe sąsiedzkie zatargi». ”<br/>
+
+        </div>
+
+    </div>
+
+     <footer>
+        Zegar &copy; Nowoczesna aplikacja do sprawdzania czasu
+     </footer>
+      
+
+</body>
+</html>

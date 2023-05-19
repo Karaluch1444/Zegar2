@@ -1,0 +1,154 @@
+body {
+    margin: 0px;
+    background-color: #0a1f3c;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    background-color: #080d1a;
+    margin: 0px;
+}
+
+#logo{
+    float: left;
+    padding: 10px;
+}
+
+.nav {
+    list-style-type: none;
+    text-align: left;
+    margin:0;
+    float: left;
+}
+
+.nav > li {
+    display: inline-block;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+
+.nav a{
+    text-decoration: none;
+    color: #aa4ef3;
+}
+
+.nav a:hover{
+    text-decoration: none;
+    color: #dd7ff6;
+}
+
+#container{
+    width: 1000px;
+    margin-left: auto ;
+    margin-right: auto;
+}
+
+#dodaj {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    font-size: 181px;
+    color: #ed8ed3;
+    text-shadow: 0 0 0.3em rgb(145, 0, 137), 0 0 0.3em rgb(145, 0, 137), 0 0 0.3em rgb(145, 0, 137);
+}
+
+
+.info{
+    background-color: #090e2b;
+    margin-bottom: 100px;
+}
+
+.img {
+    float: left;
+    background-color: #080d1a;
+    padding: 20px;
+}
+
+.txt {
+    float: left;
+    padding: 20px;
+    color: white;
+    width: 820px;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #ed8ed3;
+}
+
+footer {
+    padding-top: 30px;
+    font-size: 20px;
+    color: #aa4ef3;
+    background-color: #080d1a;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+#spis {
+    padding-top: 30px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #090e2b;
+    width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slajd {
+    background-color: #090e2b;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.lista {
+    background-color: #090e2b;
+    color: #ffffff;
+    padding: 20px;
+}
+
+h2 {
+    color: aqua;
+}
+
+.link {
+    background-color: #090e2b;
+}
+
+#zwiastun {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 0.3em #fa51cd, 0 0 0.3em #fa51cd, 0 0 0.3em #fa51cd;
+}
+
+#tadeusz {
+    color: #ed8ed3;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    padding-bottom: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#tworca{
+    color: #ed8ed3;
+    text-align: center;
+    padding: 100px;
+}
+
+h3{
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    color: #923c7b;
+} 

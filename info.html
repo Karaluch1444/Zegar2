@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Zegar</title>
+    <meta name="description" content="123">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <script type="text/javascript">
+            
+        function odliczanie()
+            {
+            var dzisiaj = new Date();
+                
+            var dzien = dzisiaj.getDate();
+            var miesiac = dzisiaj.getMonth()+1;
+            var rok = dzisiaj.getFullYear();
+                
+            var godzina = dzisiaj.getHours();
+            if (godzina<10) godzina = "0"+godzina;
+                
+            var minuta = dzisiaj.getMinutes();
+            if (minuta<10) minuta = "0"+minuta;
+                
+            var sekunda = dzisiaj.getSeconds();
+            if (sekunda<10) sekunda = "0"+sekunda;
+                
+            document.getElementById("zegar").innerHTML = 
+            dzien+"/"+miesiac+"/"+rok+" | "+godzina+":"+minuta+":"+sekunda;
+                
+            setTimeout("odliczanie()",1000);
+            }
+    </script>
+ 
+
+</head>
+
+<body onload="odliczanie();">
+    
+    <header>
+        <nav>
+
+            <div id="logo"><img src="logo.png" style="width: 50px; height: 50px;"></div>
+            
+            <ul class="nav">
+                <li> <a href="index.html">Strona Główna</a> </li>
+                <li> <a href="Premium.html">Premium</a> </li>
+                <li> <a href="info.html">Informacje</a> </li>
+                <li> <a href="Tworcy.html">Twórcy</a> </li>
+            </ul>
+            
+            <div style="clear: both;"></div>
+            
+        </nav>
+    </header>
+
+    <div id="container">
+
+        <div class="info" style="margin-top: 100px;">
+            
+            <div class="img">
+                
+                <img src="logo.png" style="width: 100px; height: 100px;">
+            
+            </div>
+            
+            <div class="txt">
+                <h1>Do czego służy nasza strona?</h1>
+                Otóż potzebna jest ona, aby każdy człowiek, o każdej porze dnia i nocy, mógł sprawdzić jaka jest godzina i jaki jest dzień.
+            </div>
+            
+            <div style="clear: both;"></div>
+        
+        </div>
+
+        <div class="info">
+            
+            <div class="txt">
+                
+                <h1>Dlaczego jesteśmy lepsi od innych?</h1>
+                Nasza strona zmiata konkurencje ponieważ jest różowa, a inne strony tego typu nie mogę się tym pochwalić.
+            </div>
+
+            <div class="img" style="text-align: left;">
+                
+                <img src="img1.png" style="width: 100px; height: 100px;">
+            
+            </div>
+            
+            <div style="clear: both;"></div>
+        
+        </div>
+
+        <div class="info">
+            
+            <div class="img">
+                
+                <img src="img3.png" style="width: 100px; height: 100px;">
+            
+            </div>
+            
+            <div class="txt">
+                <h1>Czy zamierzamy dalej rozwijać tę piękną stronę?</h1>
+                Owszem. W najbliższym czasie mamy w planach wprowadzenie kilku istotnych zmian i wiele nowości. Jeżeli wy także macie jakiś pomysł piszcie na discordzie do Karaluch#3934.
+            </div>
+            
+            <div style="clear: both;"></div>
+        
+        </div>
+
+        <div class="info">
+            
+            <div class="txt">
+                
+                <h1>Jak się z nami skontaktować?</h1>
+                Możesz napisać na discordzie do właściciela strony, jego nazwa to Karaluch#3934. Niedługo dodamy więcej możliwości kontaktu z nami.
+            </div>
+
+            <div class="img" style="text-align: left;">
+                
+                <img src="img2.png" style="width: 100px; height: 100px;">
+            
+            </div>
+            
+            <div style="clear: both;"></div>
+        
+        </div>
+
+        
+
+     </div>
+
+     <footer>
+        Zegar &copy; Nowoczesna aplikacja do sprawdzania czasu
+     </footer>
+      
+
+</body>
+</html>
